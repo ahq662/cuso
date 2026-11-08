@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- wool -->
+    <path android:fillColor="#FBF3E2" android:pathData="M54,24a20,20 0,1 0,0.1 0z" />
+    <!-- ears -->
+    <path android:fillColor="#5A3E2B" android:pathData="M32,50h8v6h-8zM68,50h8v6h-8z" />
+    <!-- face -->
+    <path android:fillColor="#5A3E2B" android:pathData="M42,44h24v22h-24z" />
+    <!-- eyes -->
+    <path android:fillColor="#FFFFFF" android:pathData="M46,50h5v5h-5zM57,50h5v5h-5z" />
+    <path android:fillColor="#1E1611" android:pathData="M47,51h3v3h-3zM58,51h3v3h-3z" />
+    <!-- cheeks -->
+    <path android:fillColor="#F2A6A6" android:pathData="M44,59h3v2h-3zM61,59h3v2h-3z" />
+    <!-- legs -->
+    <path android:fillColor="#5A3E2B" android:pathData="M44,66h5v10h-5zM59,66h5v10h-5z" />
+    <!-- bell -->
+    <path android:fillColor="#FFD166" android:pathData="M52,68h4v4h-4z" />
+</vector>

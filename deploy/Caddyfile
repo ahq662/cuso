@@ -1,0 +1,10 @@
+voice.example.com {
+    encode gzip
+    root * /opt/cuso/web/dist
+
+    @backend path /api/* /uploads/* /socket.io/*
+    reverse_proxy @backend 127.0.0.1:3000
+
+    try_files {path} /index.html
+    file_server
+}

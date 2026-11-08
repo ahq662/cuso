@@ -1,0 +1,11 @@
+const login = await (await fetch('http://localhost:5173/src/pages/LoginPage.jsx')).text();
+const reg = await (await fetch('http://localhost:5173/src/pages/RegisterPage.jsx')).text();
+const voice = await (await fetch('http://localhost:5173/src/pages/VoiceRoomPage.jsx')).text();
+const css = await (await fetch('http://localhost:5173/src/styles.css')).text();
+console.log('Login tavern removed:', !login.includes('TavernScene'), '| foot restored:', login.includes('auth-hero-foot'));
+console.log('Register tavern removed:', !reg.includes('TavernScene'), '| foot restored:', reg.includes('auth-hero-foot'));
+console.log('Voice campfire removed:', !voice.includes('CampfireScene') && !voice.includes('还没有人进入语音'));
+console.log('CSS auth-hero-foot:', css.includes('.auth-hero-foot'), '| auth-hero-scene gone:', !css.includes('.auth-hero-scene'));
+console.log('css voice-empty gone:', !css.includes('.voice-empty'));
+const api = await fetch('http://localhost:5173/api/health');
+console.log('api:', api.status);

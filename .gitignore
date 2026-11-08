@@ -1,0 +1,70 @@
+# 依赖
+node_modules/
+
+# npm 缓存（本机沙箱内）
+.npm-cache/
+
+# 运行时数据（本地保留，不提交）
+server/data/
+server/uploads/
+
+# 环境变量与密钥
+.env
+server/.env
+.env.local
+.env.*.local
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+密钥配置.md
+*.jks
+*.keystore
+
+# 数据库
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+
+# 前端构建产物
+dist/
+web/dist/
+.vite/
+
+# Android 构建与本地配置
+android/.gradle/
+android/build/
+android/app/build/
+android/app/release/
+android/.cxx/
+android/.externalNativeBuild/
+android/app/.cxx/
+android/app/.externalNativeBuild/
+android/.kotlin/
+android/local.properties
+android/.idea/
+*.apk
+*.aab
+
+# 本机构建工具
+.android-tools/
+
+# 编辑器 / 系统文件
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+
+# 日志
+*.log
+
+# 临时测试截图 / 脚本
+tmp_*
+
+# Firebase（如果以后加）
+google-services.json

@@ -1,0 +1,16 @@
+[Unit]
+Description=CUSO voice server
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/cuso/server
+ExecStart=/usr/bin/node src/index.js
+Restart=always
+RestartSec=3
+User=cuso
+Group=cuso
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target
